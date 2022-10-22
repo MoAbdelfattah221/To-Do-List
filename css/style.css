@@ -1,0 +1,65 @@
+:root{
+    --main-color: rgb(8,6,133);
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+section .container h1{
+    color: var(--main-color);
+}
+section .container form{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+@media (max-width: 767px) {
+    section .container form{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+section .container form input,
+section .container form a{
+    border-radius: 6px;
+    padding: 10px 15px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+section .container form input{
+    border: 1px solid #ccc;
+    color: var(--main-color);
+    outline: none;
+}
+section .container form a{
+    background-color: var(--main-color);
+    color: #fff;
+}
+@media (max-width: 767px) {
+    section .container form a{
+        margin-top: 10px;
+    }
+}
+section .container form i{
+    cursor: pointer;
+}
+section .container .copy{
+    font-size: 12px;
+}
+section .container .copy i,
+section .container .copy span{
+    color: var(--main-color);
+}
