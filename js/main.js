@@ -35,7 +35,8 @@ add.onclick = () => {
 
         // Add Text
         p.innerHTML = text.value;
-
+        text.value = "";
+        
         // Delete Icon
         i.onclick = () => {
             div.remove();
